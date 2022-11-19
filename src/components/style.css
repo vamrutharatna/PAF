@@ -1,0 +1,37 @@
+.hero__div{
+    border-radius: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.hero__img{
+    opacity: 0.7;
+}
+
+.hero__items{
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    font-weight: 200;
+}
+
+.category__container{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: auto;
+}
+
+.trending__container{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: auto;
+}
+
+.top__container{
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px 280px;
+    grid-template-rows: auto;
+}
+
+
+
