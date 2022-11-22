@@ -27,8 +27,40 @@
     grid-template-rows: auto;
 }
 
+.content__container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: auto;
+    row-gap: 4rem;
+}
+
 .top__container {
     display: grid;
     grid-template-columns: 280px 280px 280px 280px 280px;
     grid-template-rows: auto;
 }
+
+.rtsection__container{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: auto;
+    padding-left: 2rem;
+}
+
+.sort{
+    padding: 0.3rem;
+    background-color: rgba(255, 153, 0, 0.2);
+    outline: none;
+    border-radius: 5px;
+    border:0px solid rgba(255, 153, 0, 0.2);
+    color: black;
+}
+
+.sort_div{
+    margin-left: 1rem;
+}
+
+
+.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+    content: none;
+  }

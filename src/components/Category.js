@@ -9,18 +9,22 @@ function Category() {
           <CategoryCardItem 
           img_path='myth.svg'
           heading='Mythology Stories'
+          path='/mythological-stories'
           />
           <CategoryCardItem 
           img_path='char.svg'
           heading='Characters'
+          path='/characters'
           />
           <CategoryCardItem 
           img_path='fest.svg'
           heading='Festivals'
+          path='/festivals'
           />
           <CategoryCardItem 
           img_path='temp.svg'
           heading='Temples'
+          path='/temples'
           />
       </div>
         
