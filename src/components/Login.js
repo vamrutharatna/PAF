@@ -88,7 +88,6 @@ function LogIn() {
       <br></br>
 
       <a href='/' style={{ 'color': 'white', 'marginLeft': '10rem', 'fontSize': '20px', 'fontWeight': 'bold' }}>
-        <i className='fa fa-arrow-left'></i>
         Home
       </a>
 

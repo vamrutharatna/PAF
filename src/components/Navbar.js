@@ -23,9 +23,9 @@ export default function App() {
   return (
     <MDBNavbar className='shadow-0' expand='lg' sticky light bgColor='light'>
       <MDBContainer>
-        <MDBNavbarBrand className='fs-3' href='#' style={{'font-family': 'SeoulHangang CBL'}}>
-            <span style={{color:'#FF5C00','font-weight':'bold'}}>Pooja</span>
-            <span style={{color:'#FF0099','font-weight':'bold'}}>Archana</span>
+        <MDBNavbarBrand className='fs-3' href='/'>
+            <span style={{color:'#FF5C00','font-weight':'500','font-family': 'SeoulHangang CBL'}}>Pooja</span>
+            <span style={{color:'#FF0099','font-weight':'600','font-family': 'Playfair Display'}}>Archana</span>
         </MDBNavbarBrand>
 
         <MDBNavbarToggler
@@ -45,10 +45,10 @@ export default function App() {
                   Categories
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link>Mythology Stories</MDBDropdownItem>
-                  <MDBDropdownItem link>Characters</MDBDropdownItem>
-                  <MDBDropdownItem link>Temples</MDBDropdownItem>
-                  <MDBDropdownItem link>Festivals</MDBDropdownItem>
+                  <MDBDropdownItem link href='/mythological-stories'>Mythology Stories</MDBDropdownItem>
+                  <MDBDropdownItem link href='/characters'>Characters</MDBDropdownItem>
+                  <MDBDropdownItem link href='/temples'>Temples</MDBDropdownItem>
+                  <MDBDropdownItem link href='/festivals'>Festivals</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
@@ -57,8 +57,8 @@ export default function App() {
           <MDBNavbarNav right className='mr-auto mb-2 mb-lg-0' style={{'font-family': 'Inter'}}>
 
                         <MDBInputGroup tag="form" className='d-flex w-auto mt-3 mb-3'>
-                            <input className='form-control'  size='lg' placeholder='Search' aria-label="Search" type='Search' style={{border:'2px solid black'}}/>
-                            <MDBBtn outline color='dark' size='mx-2'><i className='fa fa-search'></i></MDBBtn>
+                            <input className='form-control' size='lg' placeholder='Search' aria-label="Search" type='Search' style={{border:'2px solid #FF9900','color':'black'}}/>
+                            <MDBBtn outline color='warning' size='mx-2' style={{'color':'black','fontSize':'17px'}}><i className='fa fa-search'></i></MDBBtn>
                         </MDBInputGroup>
 
                         <MDBNavbarItem>
