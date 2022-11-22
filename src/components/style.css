@@ -5,7 +5,9 @@
 }
 
 .hero__img {
-    opacity: 0.7;
+    /* opacity: 1; */
+    max-height: 575px;
+    object-fit: cover;
 }
 
 .hero__items {
