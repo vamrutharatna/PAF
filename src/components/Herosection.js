@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import CarouselItem from './CarouselItem';
-import { myAxios } from '../services/Helper'
 import {
     loadMythologyStory,
     loadCharacters,
@@ -11,15 +9,12 @@ import {
 import { toast } from 'react-hot-toast';
 import './style.css'
 import {
-    MDBBtn,
-    MDBCarousel,
-    MDBCarouselItem,
+    MDBCarousel
 } from 'mdb-react-ui-kit';
 function Carousel() {
 
-    const { storyId } = useParams();
     const [mythologyStory, setMythologyStory] = useState([]);
-    const [charecter, setCharacter] = useState([]);
+    const [character, setCharacter] = useState([]);
     const [festival, setfestival] = useState([]);
     const [temple, setTemple] = useState([]);
 
@@ -87,9 +82,9 @@ function Carousel() {
                 <CarouselItem
                     id={2}
                     img='krishna.png'
-                    title={charecter.title}
-                    description={charecter.description}
-                    views={charecter.views}
+                    title={character.title}
+                    description={character.description}
+                    views={character.views}
                     author='PoojaArchana Team'
                 />
 

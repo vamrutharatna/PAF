@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css'
 import {
     MDBBtn,
-    MDBCarousel,
     MDBCarouselItem,
 } from 'mdb-react-ui-kit';
 function CarouselItem(props) {

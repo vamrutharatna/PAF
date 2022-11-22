@@ -1,4 +1,3 @@
-import { privateAxios } from "./Helper";
 import { myAxios } from "./Helper";
 
 //load single post of given id
