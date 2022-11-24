@@ -72,7 +72,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={1}
-                    img='shri_ram.jpg'
+                    img='shri_ram 1.png'
                     title={mythologyStory.title}
                     description={mythologyStory.description}
                     views={mythologyStory.views}
@@ -90,7 +90,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={3}
-                    img='holi.jpg'
+                    img='holi 1.png'
                     title={festival.title}
                     description={festival.description}
                     views={festival.views}
@@ -99,7 +99,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={4}
-                    img='somnath.jpg'
+                    img='somnath 1.png'
                     title={temple.title}
                     description={temple.description}
                     views={temple.views}

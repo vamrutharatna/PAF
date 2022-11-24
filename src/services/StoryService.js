@@ -6,6 +6,10 @@ export const load = (storyId) => {
     return myAxios.get("/story/" + storyId).then((reponse) => reponse.data);
 };
 
+export const loadByCategory = (categoryId) => {
+    return myAxios.get("/story/category/" + categoryId).then((response) => response.data);
+}
+
 export const loadMythologyStory = () => {
     return myAxios.get("/story/1").then((reponse) => reponse.data);
 };
