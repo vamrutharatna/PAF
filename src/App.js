@@ -9,6 +9,7 @@ import Temple from './pages/Temple';
 import Char from './pages/Char';
 import Fest from './pages/Fest';
 import Episodes from './pages/Episodes';
+import Story from './pages/Story';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/signin' element={<SignIn />} />
         <Route path='/mythological-stories' element={<Myth />} />
         <Route path='/mythological-stories/episodes' element={<Episodes />} />
+        <Route path='/mythological-stories/episodes/{1}' element={<Story />} />
         <Route path='/temples' element={<Temple />} />
         <Route path='/characters' element={<Char />} />
         <Route path='/festivals' element={<Fest />} />

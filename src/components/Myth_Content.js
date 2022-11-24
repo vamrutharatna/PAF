@@ -149,15 +149,6 @@ function Myth_Content() {
           description='Once, Bhagiratha asked Brahma to bring the river Ganges down to earth to purify the souls of his ancestors and help them to attain nirvana...'
         /> */}
       </div>
-      <nav aria-label="Search results pages">
-        <ul class="pagination justify-content-center pagination-circle">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
     </div>
   )
 }
