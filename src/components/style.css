@@ -42,43 +42,44 @@
     grid-template-rows: auto;
 }
 
-.rtsection__container{
+.rtsection__container {
     display: grid;
     grid-template-columns: 350px 350px 350px 350px;
     grid-template-rows: auto;
     padding-left: 2rem;
 }
 
-.sort{
+.sort {
     padding: 0.3rem;
     background-color: rgba(255, 153, 0, 0.2);
     outline: none;
     border-radius: 5px;
-    border:0px solid rgba(255, 153, 0, 0.2);
+    border: 0px solid rgba(255, 153, 0, 0.2);
     color: black;
 }
 
-.sort_div{
+.sort_div {
     margin-left: 1rem;
 }
 
 
-.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+.bc-icons-2 .breadcrumb-item+.breadcrumb-item::before {
     content: none;
-  }
+}
 
 
-.left_epcontent p{
+.left_epcontent p {
     margin-left: 2rem;
 }
-.left_epcontent{
+
+.left_epcontent {
     margin-bottom: 3rem;
     text-align: center;
     color: black;
     display: flex;
 }
 
-.right_epcontent{
+.right_epcontent {
     border: 1px solid orange;
     border-radius: 10px;
     padding: 2rem 2rem;

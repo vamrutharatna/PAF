@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import CarouselItem from './CarouselItem';
-import { myAxios } from '../services/Helper'
 import {
     loadMythologyStory,
     loadCharacters,
@@ -11,15 +9,12 @@ import {
 import { toast } from 'react-hot-toast';
 import './style.css'
 import {
-    MDBBtn,
-    MDBCarousel,
-    MDBCarouselItem,
+    MDBCarousel
 } from 'mdb-react-ui-kit';
 function Carousel() {
 
-    const { storyId } = useParams();
     const [mythologyStory, setMythologyStory] = useState([]);
-    const [charecter, setCharacter] = useState([]);
+    const [character, setCharacter] = useState([]);
     const [festival, setfestival] = useState([]);
     const [temple, setTemple] = useState([]);
 
@@ -77,7 +72,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={1}
-                    img='h1.svg'
+                    img='shri_ram 1.png'
                     title={mythologyStory.title}
                     description={mythologyStory.description}
                     views={mythologyStory.views}
@@ -86,16 +81,16 @@ function Carousel() {
 
                 <CarouselItem
                     id={2}
-                    img='h2.svg'
-                    title={charecter.title}
-                    description={charecter.description}
-                    views={charecter.views}
+                    img='krishna.png'
+                    title={character.title}
+                    description={character.description}
+                    views={character.views}
                     author='PoojaArchana Team'
                 />
 
                 <CarouselItem
                     id={3}
-                    img='h3.svg'
+                    img='holi 1.png'
                     title={festival.title}
                     description={festival.description}
                     views={festival.views}
@@ -104,7 +99,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={4}
-                    img='h4.svg'
+                    img='somnath 1.png'
                     title={temple.title}
                     description={temple.description}
                     views={temple.views}
