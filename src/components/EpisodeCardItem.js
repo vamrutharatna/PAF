@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function EpisodeCardItem(props) {
   return (
-    <Link>
+    <Link to={props.path}>
     <div>
       <figure>
         <img src={props.src} alt=''/>

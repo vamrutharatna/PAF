@@ -158,7 +158,7 @@ function LogIn() {
                   <MDBIcon fab icon='facebook-f' style={{ 'backgroundColor': '#FFFFFF', 'color': 'black' }} />
                 </MDBBtn>
 
-                <MDBBtn floating className='mx-1'>
+                <MDBBtn floating className='mx-1' onClick={console.log('Hello')}>
                   <MDBIcon fab icon='google' style={{ 'backgroundColor': '#FFFFFF', 'color': 'black' }} />
                 </MDBBtn>
 

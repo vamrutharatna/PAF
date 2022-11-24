@@ -6,9 +6,15 @@ import ContentCardItem from './ContentCardItem';
 function Myth_Content() {
   return (
     <div style={{'margin':'2rem 2rem','padding':'1rem 2rem','borderRadius':'24px','backgroundColor':'rgba(255, 153, 0, 0.05)','fontFamily':'Inter'}}>
-       <Link to='/'>
-            <p style={{'color':'#4B002D','fontSize':'14px','lineHeight':'28px','marginBottom':'2rem'}}>Home</p>
-       </Link>
+       <div className='bc-icons-2' >
+       <nav aria-label="breadcrumb">
+            <ol class="breadcrumb purple lighten-4">
+            <li class="breadcrumb-item"><a class="black-text" href="/" style={{'color':'#4B002D','fontSize':'15px','lineHeight':'28px','marginBottom':'2rem'}}>Home</a><i class="fas fa-angle-right mx-2"
+                aria-hidden="true"></i></li>
+            <li class="breadcrumb-item active" style={{'color':'#4B002D','fontSize':'16px','lineHeight':'28px','marginBottom':'2rem'}}>Mythology Stories</li>
+            </ol>
+        </nav>
+        </div>
        <p style={{'color':'black','fontSize':'24px','fontWeight':'600','lineHeight':'28px'}}>Mythology Stories</p>
        <div style={{'display':'flex','justifyContent':'space-between','alignContent':'center'}}>
             <p style={{'color':'#4C4C4C','font-style': 'normal','fontSize':'16px','fontWeight':'400','lineHeight':'28px'}}>Check out our interesting stories. Click on any one to dive into the episodes of Mythology!</p>

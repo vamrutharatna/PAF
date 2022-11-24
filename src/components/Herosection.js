@@ -77,7 +77,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={1}
-                    img='shri_ram.jpg'
+                    img='h1.svg'
                     title={mythologyStory.title}
                     description={mythologyStory.description}
                     views={mythologyStory.views}
@@ -86,7 +86,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={2}
-                    img='krishna.png'
+                    img='h2.svg'
                     title={charecter.title}
                     description={charecter.description}
                     views={charecter.views}
@@ -95,7 +95,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={3}
-                    img='holi.jpg'
+                    img='h3.svg'
                     title={festival.title}
                     description={festival.description}
                     views={festival.views}
@@ -104,7 +104,7 @@ function Carousel() {
 
                 <CarouselItem
                     id={4}
-                    img='somnath.jpg'
+                    img='h4.svg'
                     title={temple.title}
                     description={temple.description}
                     views={temple.views}

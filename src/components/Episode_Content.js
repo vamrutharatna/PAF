@@ -11,6 +11,8 @@ function Episode_Content() {
             <ol class="breadcrumb purple lighten-4">
             <li class="breadcrumb-item"><a class="black-text" href="/" style={{'color':'#4B002D','fontSize':'15px','lineHeight':'28px','marginBottom':'2rem'}}>Home</a><i class="fas fa-angle-right mx-2"
                 aria-hidden="true"></i></li>
+            <li class="breadcrumb-item"><a class="black-text" href="/mythological-stories" style={{'color':'#4B002D','fontSize':'15px','lineHeight':'28px','marginBottom':'2rem'}}>Mythology Stories</a><i class="fas fa-angle-right mx-2"
+                aria-hidden="true"></i></li>
             <li class="breadcrumb-item active" style={{'color':'#4B002D','fontSize':'16px','lineHeight':'28px','marginBottom':'2rem'}}>Ramayana The Epic</li>
             </ol>
         </nav>
@@ -29,6 +31,7 @@ function Episode_Content() {
        <p style={{'color':'black','fontSize':'18px','fontWeight':'600','lineHeight':'28px','marginTop':'2rem'}}>7 Episodes</p>
        <div className='content__container' style={{'margin':'2rem 0rem'}}>
           <EpisodeCardItem 
+                      path='/mythological-stories/episodes/{1}'
                       episode_id='1'
                       src='../e1.svg'
                       time_to_read='2 min read'
