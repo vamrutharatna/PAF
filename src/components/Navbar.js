@@ -21,7 +21,7 @@ export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar className='shadow-0' expand='lg' sticky light bgColor='light'>
+    <MDBNavbar className='shadow-0' expand='xxl' sticky light bgColor='light'>
       <MDBContainer>
         <MDBNavbarBrand className='fs-3' href='/'>
             <span style={{color:'#FF5C00','font-weight':'500','font-family': 'SeoulHangang CBL'}}>Pooja</span>

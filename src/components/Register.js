@@ -81,7 +81,7 @@ function Register() {
 
       <MDBContainer fluid className='d-flex align-items-center justify-content-center'>
 
-        <MDBCard className='m-3' style={{ maxWidth: '600px', borderRadius: '16px' }}>
+        <MDBCard className='m-1 p-1' style={{ maxWidth: '600px', borderRadius: '16px' }}>
 
           <MDBCardBody className='px-5 py-4'>
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 function TrendingCardItem(props) {
   return (
-    <div>
+    <div className='tcardItem'>
       <figure>
         <img src={props.src} />
         <br></br>

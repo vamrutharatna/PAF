@@ -63,7 +63,7 @@ function Myth_Content() {
 
   return (
     <div style={{ 'margin': '2rem 2rem', 'padding': '1rem 2rem', 'borderRadius': '24px', 'backgroundColor': 'rgba(255, 153, 0, 0.05)', 'fontFamily': 'Inter' }}>
-      <Link to='/'>
+      <Link to='/' style={{'textDecoration':'none'}}>
         <p style={{ 'color': '#4B002D', 'fontSize': '14px', 'lineHeight': '28px', 'marginBottom': '2rem' }}>Home</p>
       </Link>
       <p style={{ 'color': 'black', 'fontSize': '24px', 'fontWeight': '600', 'lineHeight': '28px' }}>Mythology Stories</p>

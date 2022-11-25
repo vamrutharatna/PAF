@@ -62,7 +62,7 @@ function Trending() {
   }, [])
 
   return (
-    <div style={{ 'margin': '1rem 3rem', 'fontFamily': 'Inter' }}>
+    <div style={{ 'margin': '3rem', 'fontFamily': 'Inter' }}>
       <h5 style={{ 'padding': '5px 10px', 'marginBottom': '40px', color: 'black', 'fontWeight': 'bold', 'fontFamily': 'Inter' }}>Trending Stories to read</h5>
       <div className='trending__container'>
         <TrendingCardItem

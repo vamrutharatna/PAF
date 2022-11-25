@@ -1,9 +1,5 @@
 import { MDBBtn } from 'mdb-react-ui-kit'
 import React, { useState } from 'react'
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
-import * as htmlToImage from 'html-to-image';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 import {
     EmailShareButton,
     FacebookShareButton,
@@ -28,17 +24,6 @@ function StoryContent() {
   const toggleShow = () => setBasicModal(!basicModal);
   const exportPdf = () => {
 
-    htmlToImage.toPng(document.getElementById('story'), { quality: 0.95 })
-        .then(function (dataUrl) {
-          var link = document.createElement('a');
-          link.download = 'my-image-name.jpeg';
-          const pdf = new jsPDF();
-          const imgProps= pdf.getImageProperties(dataUrl);
-          const pdfWidth = (pdf.internal.pageSize.getWidth());
-          const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-          pdf.addImage(dataUrl, 'PNG', 0, 0,pdfWidth, pdfHeight);
-          pdf.save("download.pdf"); 
-        });
     }
 
     const shareUrl = 'http://poojaarchana.com';
@@ -121,3 +106,4 @@ function StoryContent() {
 }
 
 export default StoryContent
+
