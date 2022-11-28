@@ -19,7 +19,7 @@ import {
   } from 'mdb-react-ui-kit';
 
 function StoryContent() {
-    const [basicModal, setBasicModal] = useState(false);
+  const [basicModal, setBasicModal] = useState(false);
 
   const toggleShow = () => setBasicModal(!basicModal);
   const exportPdf = () => {

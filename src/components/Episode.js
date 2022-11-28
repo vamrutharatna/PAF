@@ -16,7 +16,27 @@ import Stack from '@mui/material/Stack';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { MDBBtn } from 'mdb-react-ui-kit';
-
+import {
+    EmailShareButton,
+    FacebookShareButton,
+    FacebookIcon,
+    WhatsappIcon,
+    EmailIcon,
+    WhatsappShareButton,
+  } from "react-share";
+  import {
+    MDBModal,
+    MDBModalDialog,
+    MDBModalContent,
+    MDBModalHeader,
+    MDBModalTitle,
+    MDBModalBody,
+    MDBModalFooter,
+  } from 'mdb-react-ui-kit';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+import * as htmlToImage from 'html-to-image';
+import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 function Episode() {
     const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -26,6 +46,28 @@ function Episode() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const [basicModal, setBasicModal] = useState(false);
+
+  const toggleShow = () => setBasicModal(!basicModal);
+  const exportPdf = () => {
+    htmlToImage.toPng(document.getElementById('story'), { quality: 0.95 })
+        .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'my-image-name.jpeg';
+          const pdf = new jsPDF();
+          const imgProps= pdf.getImageProperties(dataUrl);
+          const pdfWidth = pdf.internal.pageSize.getWidth();
+          const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+          pdf.addImage(dataUrl, 'PNG', 0, 0,pdfWidth, pdfHeight);
+          pdf.save("download.pdf"); 
+        });
+
+    }
+
+    const shareUrl = 'http://poojaarchana.com';
+    const title = 'PoojaArchana';
+
+    const [fontSize, setFontSize] = useState(18);
   return (
     <div style={{'margin':'2rem 2rem','padding':'2rem 2rem','borderRadius':'24px','backgroundColor':'rgba(255, 153, 0, 0.05)','fontFamily':'Inter'}}>
       <div className='bc-icons-2' >
@@ -71,18 +113,33 @@ function Episode() {
                         open={open}
                         onClose={handleClose}
                         TransitionComponent={Fade}>
-                        <MenuItem onClick={handleClose}>
+                        <MenuItem onClick={toggleShow}>
                         <ListItemIcon>
                             <ShareSharpIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText>Share</ListItemText>
                         </MenuItem>
-                        <MenuItem onClick={handleClose}>
+                        <MenuItem onClick={exportPdf}>
                         <ListItemIcon>
                             <DownloadForOfflineSharpIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText>Download</ListItemText>
                         </MenuItem>
+                        <MDBModal tabIndex='-1' show={basicModal} setShow={setBasicModal} size='sm'>
+                        <MDBModalDialog centered>
+                        <MDBModalContent>
+                            <MDBModalHeader>
+                                <MDBModalTitle>Share <i className='fa fa-share-alt'></i></MDBModalTitle>
+                                <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+                            </MDBModalHeader>
+                            <MDBModalBody style={{'textAlign':'left'}}>
+                                <p><EmailShareButton  url={shareUrl} quote={title}> <EmailIcon size={32} round /> Email </EmailShareButton></p>
+                                <p><WhatsappShareButton url={shareUrl} quote={title}> <WhatsappIcon size={32} round /> Whatsapp </WhatsappShareButton></p>
+                                <p><FacebookShareButton  url={shareUrl} quote={title}> <FacebookIcon size={32} round /> Facebook </FacebookShareButton></p>
+                            </MDBModalBody>
+                        </MDBModalContent>
+                        </MDBModalDialog>
+                    </MDBModal>
                     </Menu>
                     </div>
             </div>
@@ -90,22 +147,19 @@ function Episode() {
        </div>
        <div style={{'marginLeft':'4rem','margin':'2rem 4rem'}}>
        <img src='../../story.svg'></img>
-       <p style={{'margin':'2rem'}}>
+       <p style={{'margin':'2rem'}} id='story'>
        Dasharatha was the king of Ayodhya and had three wives – Kausalya (eldest wife. She was the daughter of the King of Kosala Kingdom), Kaikeyi (second wife. Kaikeyī belonged ruling family of the Kekaya clan), Sumitra (third wife. She came from the ancient kingdom of Kashi.) but no children.
 The thought of his dynasty ending with him saddened King Dasharatha and he was very eager to have a son who would take care of the throne of Ayodhya.
 King Dasharatha visited the royal family’s Guru, Vashistha and narrated his problem. Vasistha comforted King Dashrath by telling him that he would have four sons.
 With King Dasharath’s consent, Guru Vashistha summoned Rishi Shringi to perform the Putra-Kam yagna (sacrificial fire for the birth of sons). The gods gave him with a bowl of divine nectar.
-</p>
-<p style={{'margin':'2rem'}}>
+
 As the three queens sat to eat their share of the prasadam, an eagle snatched Sumitra’s share. To console Sumitra, Kaikeyi and Kausalya gave half of their share each to Sumitra. With Kausalya and Kaikeyi each bearing one son i.e. Rama was born to Kausalya, Bharata was born to Kaikeyi, and Sumitra gave birth to twins i.e. Lakshman and Shatrughan ( Ram portrayed as the seventh avatar of the God Vishnu who had opted to be born into mortality in order to combat the demon Ravan, who was oppressing the Gods, and who could only be destroyed by a mortal.
 While Bharata and Shatrughna are his disc and conch-shell, Lakshman is portrayed as an avatar of the Shesha, the nag associated with the God Vishnu.)
-</p>
-<p style={{'margin':'2rem'}}>
+
 Rishi (Sage) Viswamitra trained the sons of King Dasharath in the art of firing missile-arrows imbibed with secret chants that could cause the arrows to shower fire or water on its enemies, and even follow them through the seven worlds until they’re killed.
 When Ram was 16 years old, Rishi Vishvamitra visited to the court of King Dasharatha where the King received him with great honour. Rishi Viswamitra lived in the forest and was performing great sacrifices. However, the rakshas (Rakshas) Mericha and Subahu were disturbing sacrificial rites.
 He knew that Rama had taken birth on earth to protect his devotees and so he decided to visit King Dasharatha to ask him for favour. The Rishi asked the king to send his sons to the forest with him. Reluctantly the king agreed.
-</p>
-<p style={{'margin':'2rem'}}>
+
 
 Rishi Vishwamtra took Rama and Lakshmana, to his ashram, as he needed Ram’s help in slaying several Rakshas that had been harassing him and several other Rishis living in the area.
 Ram encountered his first problem-female rakshasi (demoness) Tadaka, Tadaka, a cursed yaksha demoness. When asked to slay the rakshasi, Rama considered it sinful to kill a woman. Rishi Vishwamitra explained that evil had no gender. The killing of Tadaka liberates the yaksha soul who was cursed for a sin, and had to adopt a rakshasi’s body.
