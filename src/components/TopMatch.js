@@ -5,7 +5,7 @@ function TopMatch() {
   return (
     <div style={{'margin':'3rem 3rem', 'fontFamily':'Inter'}}>
       <h5 style={{'padding':'5px 5px','marginBottom':'40px', color:'black', 'fontWeight':'bold', 'fontFamily':'Inter'}}>Topic Match for you</h5>
-        <div style={{'margin':'2.5rem'}}>
+        <div style={{'margin':'2rem'}}>
         <MDBBtn color='warning' style={{color:'black','borderRadius':'10px','backgroundColor':'#FF9900','fontSize':'12px','lineHeight':'30px','textTransform':'capitalize'}} size='sm' className='mx-2'>God's Youth</MDBBtn>
         <MDBBtn color='warning' style={{color:'black','borderRadius':'10px','backgroundColor':'rgba(255, 153, 0, 0.4)','fontSize':'12px','lineHeight':'30px','textTransform':'capitalize'}} size='sm' className='mx-3'>Myths</MDBBtn>
         <MDBBtn color='warning' style={{color:'black','borderRadius':'10px','backgroundColor':'rgba(255, 153, 0, 0.4)','fontSize':'12px','lineHeight':'30px','textTransform':'capitalize'}} size='sm' className='mx-3'>Latest</MDBBtn>

@@ -27,6 +27,7 @@ function Char_Content() {
        </div>
        <div className='content__container' style={{'margin':'3rem 0rem'}}>
           <ContentCardItem 
+                      path='/characters/{1}'
                       src='char1.svg'
                       author='Robin Sharma'
                       posted='Apr, 2022'

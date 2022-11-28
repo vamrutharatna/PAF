@@ -8,7 +8,7 @@ function CategoryCardItem(props) {
       <Link to={props.path} style={{'textDecoration':'none'}}>
       <div>
         <img src={props.img_path}></img>
-      </div>
+      </div> 
       </Link>
       <div>
         <h6 style={{'padding':'20px 10px', color:'black', 'fontWeight':'bold', 'fontFamily':'Inter'}}>

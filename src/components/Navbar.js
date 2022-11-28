@@ -55,7 +55,6 @@ export default function App() {
           </MDBNavbarNav>
 
           <MDBNavbarNav right className='mr-auto mb-2 mb-lg-0' style={{'font-family': 'Inter'}}>
-
                         <MDBInputGroup tag="form" className='d-flex w-auto mt-3 mb-3'>
                             <input className='form-control' size='lg' placeholder='Search' aria-label="Search" type='Search' style={{border:'2px solid #FF9900','color':'black'}}/>
                             <MDBBtn outline color='warning' size='mx-2' style={{'color':'black','fontSize':'17px'}}><i className='fa fa-search'></i></MDBBtn>

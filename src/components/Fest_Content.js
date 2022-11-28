@@ -25,6 +25,15 @@ function Fest_Content() {
             </div>
        </div>
        <div className='content__container' style={{'margin':'3rem 0rem'}}>
+       <ContentCardItem
+                      path='/festivals/{1}'
+                      src='t4.svg'
+                      author='Vikram Seth'
+                      posted='Jan, 2022'
+                      time_to_read='5 min read'
+                      heading='Holi'
+                      description='The ancient tantric temple, where the Goddess is worshipped as Siddha Kubjika, is one of the Shakti Peeths where the womb and the...'
+          />
           <ContentCardItem 
                       src='rakhi 1.svg'
                       author='Robin Sharma'
@@ -40,14 +49,6 @@ function Fest_Content() {
                       time_to_read='3 min read'
                       heading='Diwali'
                       description='Whoever plans a visit to the panorama of the Himalayas and enjoying the snow of Manali, Hidimba Temple gets automatically named on the bucket-list....'
-          />
-          <ContentCardItem 
-                      src='t4.svg'
-                      author='Vikram Seth'
-                      posted='Jan, 2022'
-                      time_to_read='5 min read'
-                      heading='Holi'
-                      description='The ancient tantric temple, where the Goddess is worshipped as Siddha Kubjika, is one of the Shakti Peeths where the womb and the...'
           />
           <ContentCardItem 
                       src='char.svg'

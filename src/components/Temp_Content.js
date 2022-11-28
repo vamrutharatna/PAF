@@ -24,8 +24,9 @@ function Temp_Content() {
                 </div>
             </div>
        </div>
-       <div className='content__container' style={{'margin':'3rem 0rem'}}>
+       <div className='content__container'>
           <ContentCardItem 
+                      path='/temples/{1}'
                       src='tem1.svg'
                       author='Robin Sharma'
                       posted='Apr, 2022'

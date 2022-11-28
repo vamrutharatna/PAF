@@ -9,10 +9,10 @@ function Footer() {
                 <div className='me-5 d-none d-lg-block'>
                 </div>
                 <div>
-                    <a href='' className='me-4 text-reset'>
+                    <a href='/about-us' className='me-4 text-reset'>
                         <b>About Us</b>
                     </a>
-                    <a href='' className='me-4 text-reset'>
+                    <a href='/contact-us' className='me-4 text-reset'>
                         <b>Contact Us</b>
                     </a>
                     <a href='' className='me-4 text-reset'>

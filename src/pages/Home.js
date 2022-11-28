@@ -5,7 +5,6 @@ import Category from '../components/Category'
 import Trending from '../components/Trending';
 import TopMatch from '../components/TopMatch';
 import Footer from '../components/Footer';
-import AboutUs from '../components/AboutUs';
 
 function Home() {
   return (
@@ -15,7 +14,6 @@ function Home() {
       <Category />
       <Trending />
       <TopMatch />
-      <AboutUs />
       <Footer />
       
     </div>

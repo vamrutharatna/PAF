@@ -13,11 +13,12 @@ function RC2Section() {
           />
           <ITCardItem 
           img_path='../rc6.svg'
-          heading='Brahma The God of Creation'
+          heading='Vishnu The God of Preservation'
+
           />
           <ITCardItem 
           img_path='../rc7.svg'
-          heading='Vishnu The God of Preservation'
+          heading='Brahma The God of Creation'
           />
           <ITCardItem 
           img_path='../rc8.svg'

@@ -11,7 +11,7 @@ import {
 function AboutUs() {
   return (
     <div style={{'margin':'4rem 3rem'}}>
-      <h5 style={{'padding':'5px 10px','marginBottom':'40px', color:'black', 'fontWeight':'bold', 'fontFamily':'Inter'}}>About Us</h5>
+      <h1 style={{'padding':'5px 10px','marginBottom':'40px', color:'black', 'fontWeight':'bold', 'fontFamily':'Inter','textAlign':'center'}}>About Us</h1>
       <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
             <MDBCol>
                 <MDBCard  border='light' background='white' className='ms-auto me-auto' style={{ width: '25rem', }}>
@@ -32,6 +32,41 @@ function AboutUs() {
                 </MDBCard>
             </MDBCol>
         </MDBRow>
+        <br></br>
+        <h1 style={{'padding':'10px 10px','marginBottom':'40px', color:'black', 'fontWeight':'bold', 'fontFamily':'Inter','textAlign':'center'}}>Our Team</h1>
+        <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
+            <MDBCol>
+                <MDBCard  border='light' background='white' className='ms-auto me-auto' style={{ width: '25rem', }}>
+                    <MDBCardBody>
+                        <MDBCardTitle style={{'color':'#FF9900'}}>Rajeshwari Gupta</MDBCardTitle>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
+            <MDBCol>
+                <MDBCard  border='light' background='white' className='ms-auto me-auto' style={{ width: '25rem', }}>
+                    <MDBCardBody>
+                        <MDBCardTitle style={{'color':'#FF9900'}}>Tanmay Chakraborty</MDBCardTitle>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
+        </MDBRow>
+        <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
+            <MDBCol>
+                <MDBCard  border='light' background='white' className='ms-auto me-auto' style={{ width: '25rem', }}>
+                    <MDBCardBody>
+                        <MDBCardTitle style={{'color':'#FF9900'}}>AmruthaRatna Varada</MDBCardTitle>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
+            <MDBCol>
+                <MDBCard  border='light' background='white' className='ms-auto me-auto' style={{ width: '25rem', }}>
+                    <MDBCardBody>
+                        <MDBCardTitle style={{'color':'#FF9900'}}>Ankush Sinha</MDBCardTitle>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
+        </MDBRow>
+
     </div>
   )
 }
